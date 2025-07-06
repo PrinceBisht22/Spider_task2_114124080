@@ -1,0 +1,6 @@
+[package]
+name = "zk_voter_proof"
+type = "bin"
+authors = [""]
+
+[dependencies]
