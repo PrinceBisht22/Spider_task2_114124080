@@ -1,0 +1,140 @@
+/* Updated professional App.css with drop shadows, better colors, and a clean background */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f2f7ff, #e3ebf6);
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-out;
+}
+
+
+h2 {
+  text-align: center;
+  color: #1a237e;
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.status .live {
+  color: green;
+  font-weight: bold;
+}
+
+.status .ended {
+  color: red;
+  font-weight: bold;
+}
+
+.admin-panel {
+  background-color: #f5f9ff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.add-candidate input {
+  padding: 0.6rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 60%;
+}
+
+button {
+  background-color: #1e88e5;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+.candidate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f4ff;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.4s ease;
+}
+
+.candidate .remove {
+  background-color: #e53935;
+}
+
+.voted-msg {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.zk-form {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.zk-form input,
+.zk-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.zk-form button {
+  background-color: #43a047;
+  box-shadow: 0 4px 12px rgba(67, 160, 71, 0.3);
+}
+
+.zk-form button:hover {
+  background-color: #2e7d32;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
